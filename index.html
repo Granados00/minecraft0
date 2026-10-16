@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una pequeña guía para explorar el mundo de Minecraft.">
+  <title>Minecraft — Un mundo por descubrir</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Minecraft, inicio">
+      <span class="brand-cube" aria-hidden="true"><span></span></span>
+      <span>Minecraft <small>GUÍA DE AVENTURA</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation">
+      <a href="#mundo">El mundo</a>
+      <a href="#modos">Modos de juego</a>
+      <a href="#biomas">Biomas</a>
+      <a class="nav-cta" href="#explorar">Explorar <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+        <div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+        <div class="ground"></div>
+        <div class="tree tree-one"><i></i><b></b></div>
+        <div class="tree tree-two"><i></i><b></b></div>
+        <div class="little-house"><span></span></div>
+        <div class="pixel-flower flower-one">✿</div><div class="pixel-flower flower-two">✿</div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> TU PRÓXIMA AVENTURA EMPIEZA AQUÍ</p>
+        <h1>Un mundo<br>por <em>descubrir.</em></h1>
+        <p class="hero-copy">Construí, explorá y sobreviví. En Minecraft, cada bloque puede convertirse en el comienzo de una gran historia.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#mundo">Conocer el juego <span>→</span></a>
+          <a class="text-link" href="#modos">Ver los modos <span>↘</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span> IMAGINACIÓN SIN LÍMITES</div>
+      </div>
+      <div class="hero-caption">PAISAJE CÚBICO · EDICIÓN DE AVENTURA</div>
+    </section>
+
+    <section class="intro section-wrap" id="mundo">
+      <div class="section-heading">
+        <p class="eyebrow">01 — EL MUNDO</p>
+        <h2>Tu historia,<br>tus reglas.</h2>
+      </div>
+      <div class="intro-text">
+        <p class="lead">Minecraft es un videojuego de bloques donde podés crear casi cualquier cosa y recorrer lugares llenos de sorpresas.</p>
+        <p>Recolectá materiales, fabricá herramientas, construí tu refugio y salí a explorar. Podés jugar a tu ritmo, solo o con tus amigos.</p>
+        <a class="text-link blue-link" href="#explorar">Encontrá tu próxima idea <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="modes-section" id="modos">
+      <div class="section-wrap">
+        <div class="section-title-row">
+          <div>
+            <p class="eyebrow">02 — CÓMO JUGAR</p>
+            <h2>Dos formas de vivir<br>la aventura.</h2>
+          </div>
+          <p class="section-side-note">Elegí el estilo que más<br>se parece a vos.</p>
+        </div>
+        <div class="mode-grid">
+          <article class="info-card">
+            <div class="card-art survival-art" aria-hidden="true">
+              <span class="pixel-moon"></span><span class="pixel-hill"></span><span class="pixel-torch">♨</span>
+            </div>
+            <div class="card-body">
+              <span class="card-number">A / SUPERVIVENCIA</span>
+              <h3>Sobreviví y descubrí</h3>
+              <p>Conseguí recursos, prepará herramientas y cuidate de los peligros que aparecen cuando cae la noche.</p>
+              <span class="card-tag">RECURSOS · RETOS · AVENTURA</span>
+            </div>
+          </article>
+          <article class="info-card">
+            <div class="card-art creative-art" aria-hidden="true">
+              <span class="creative-cloud"></span><span class="floating-block block-a"></span><span class="floating-block block-b"></span><span class="floating-block block-c"></span>
+            </div>
+            <div class="card-body">
+              <span class="card-number">B / CREATIVO</span>
+              <h3>Construí sin límites</h3>
+              <p>Usá una gran variedad de bloques para diseñar casas, ciudades, jardines y todo lo que imaginés.</p>
+              <span class="card-tag">DISEÑO · IDEAS · LIBERTAD</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="biomes-section section-wrap" id="biomas">
+      <div class="biomes-copy">
+        <p class="eyebrow">03 — LUGARES PARA EXPLORAR</p>
+        <h2>Cada paisaje<br>es diferente.</h2>
+        <p>Desde bosques tranquilos hasta desiertos enormes, los biomas cambian el paisaje y los recursos que podés encontrar.</p>
+        <button class="button button-secondary" id="discoverButton">Descubrir un bioma <span>↗</span></button>
+        <p class="discovery-result" id="discoveryResult" aria-live="polite">Elegí el botón para descubrir un lugar.</p>
+      </div>
+      <div class="biome-list">
+        <article class="biome-row">
+          <div class="biome-icon forest-icon" aria-hidden="true">♣</div>
+          <div><h3>Bosque</h3><p>Árboles, madera y espacios para construir.</p></div>
+          <span class="biome-index">01</span>
+        </article>
+        <article class="biome-row">
+          <div class="biome-icon desert-icon" aria-hidden="true">☼</div>
+          <div><h3>Desierto</h3><p>Un paisaje seco con arena y cactus.</p></div>
+          <span class="biome-index">02</span>
+        </article>
+        <article class="biome-row">
+          <div class="biome-icon snow-icon" aria-hidden="true">❄</div>
+          <div><h3>Montañas nevadas</h3><p>Alturas frías con vistas increíbles.</p></div>
+          <span class="biome-index">03</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="explore-banner" id="explorar">
+      <div class="banner-art" aria-hidden="true"><span class="banner-block"></span><span class="banner-star">✦</span></div>
+      <div class="banner-copy">
+        <p class="eyebrow">TU PRÓXIMO PROYECTO</p>
+        <h2>Una idea pequeña.<br>Un mundo enorme.</h2>
+        <p>Empezá con una casa, un puente o una granja. Lo importante es animarte a crear.</p>
+      </div>
+      <a class="button button-light" href="#inicio">Volver al inicio <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-cube" aria-hidden="true"><span></span></span><span>Minecraft <small>GUÍA DE AVENTURA</small></span></a>
+    <p>Hecho para quienes siempre tienen algo nuevo que construir.</p>
+    <span class="footer-mark">BLOQUE A BLOQUE · 2026</span>
+  </footer>
+</body>
+</html>
